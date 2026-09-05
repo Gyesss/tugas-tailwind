@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Siswa</title>
+    <!-- Tailwind CSS CDN v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body
+    class="min-h-screen flex items-center justify-center bg-slate-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] px-4 py-8 relative overflow-y-auto"
+  >
+    <!-- Ambient Glowing Orbs -->
+    <div
+      class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"
+    ></div>
+    <div
+      class="absolute bottom-10 right-10 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl pointer-events-none"
+    ></div>
+
+    <div class="w-full max-w-6xl mx-auto space-y-6 relative z-10 my-auto">
+      <!-- Card Container -->
+      <div
+        class="bg-slate-900/80 backdrop-blur-xl border border-slate-800/80 rounded-3xl shadow-2xl shadow-indigo-950/50 p-6 md:p-8"
+      >
+        <!-- Title Header -->
+        <div
+          class="flex flex-col md:flex-row md:items-center justify-between border-b pb-6 border-slate-800 gap-4"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 shrink-0"
+            >
+              <i class="fa-solid fa-users text-xl"></i>
+            </div>
+            <div>
+              <h1
+                class="text-2xl md:text-3xl font-extrabold text-slate-100 tracking-tight"
+              >
+                Data Siswa
+              </h1>
+              <p class="text-slate-400 text-sm mt-1">
+                Daftar lengkap informasi siswa terdaftar
+              </p>
+            </div>
+          </div>
+          <span
+            class="bg-indigo-500/10 text-indigo-400 font-semibold px-4 py-2 rounded-xl text-xs self-start md:self-auto border border-indigo-500/20 flex items-center gap-2"
+          >
+            <i class="fa-solid fa-graduation-cap text-xs"></i>
+            Total: 3 Siswa
+          </span>
+        </div>
+
+        <!-- Table Wrapper (Responsive Overflow) -->
+        <div
+          class="overflow-x-auto mt-6 rounded-2xl border border-slate-800 bg-slate-950/40"
+        >
+          <table
+            class="w-full text-left border-collapse text-sm text-slate-300 min-w-[650px]"
+          >
+            <!-- Table Head -->
+            <thead
+              class="bg-slate-900/90 text-slate-400 font-semibold uppercase text-xs border-b border-slate-800 tracking-wider"
+            >
+              <tr>
+                <th class="p-4 text-center">No</th>
+                <th class="p-4">Nama</th>
+                <th class="p-4">Gender</th>
+                <th class="p-4">Email</th>
+                <th class="p-4">Tgl Lahir</th>
+                <th class="p-4">No HP</th>
+                <th class="p-4">Alamat</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="divide-y divide-slate-800/60">
+              <!-- Row 1 -->
+              <tr class="hover:bg-slate-800/40 transition-colors">
+                <td class="p-4 text-center font-medium text-slate-400">1</td>
+                <td class="p-4 font-semibold text-slate-100 whitespace-nowrap">
+                  Soul
+                </td>
+                <td class="p-4 whitespace-nowrap">
+                  <span
+                    class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-3 py-1 rounded-full text-xs font-medium inline-flex items-center gap-1.5"
+                  >
+                    <i class="fa-solid fa-mars text-xs"></i>
+                    Laki-laki
+                  </span>
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  soul@gmail.com
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  12 Mei 2008
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  081234567890
+                </td>
+                <td class="p-4 min-w-[200px] text-slate-400">
+                  Jl. Soekarno Hatta No. 45, Bandung
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr class="hover:bg-slate-800/40 transition-colors">
+                <td class="p-4 text-center font-medium text-slate-400">2</td>
+                <td class="p-4 font-semibold text-slate-100 whitespace-nowrap">
+                  Alya
+                </td>
+                <td class="p-4 whitespace-nowrap">
+                  <span
+                    class="bg-rose-500/10 text-rose-400 border border-rose-500/20 px-3 py-1 rounded-full text-xs font-medium inline-flex items-center gap-1.5"
+                  >
+                    <i class="fa-solid fa-venus text-xs"></i>
+                    Perempuan
+                  </span>
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  alya@gmail.com
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  20 Agustus 2009
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  089876543210
+                </td>
+                <td class="p-4 min-w-[200px] text-slate-400">
+                  Jl. Asia Afrika No. 88, Bandung
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr class="hover:bg-slate-800/40 transition-colors">
+                <td class="p-4 text-center font-medium text-slate-400">3</td>
+                <td class="p-4 font-semibold text-slate-100 whitespace-nowrap">
+                  Budi
+                </td>
+                <td class="p-4 whitespace-nowrap">
+                  <span
+                    class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-3 py-1 rounded-full text-xs font-medium inline-flex items-center gap-1.5"
+                  >
+                    <i class="fa-solid fa-mars text-xs"></i>
+                    Laki-laki
+                  </span>
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  budi@gmail.com
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  05 Januari 2008
+                </td>
+                <td class="p-4 whitespace-nowrap text-slate-400">
+                  085712344321
+                </td>
+                <td class="p-4 min-w-[200px] text-slate-400">
+                  Jl. Dago No. 102, Bandung
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tombol Navigasi Bawah (Login & Register) -->
+        <div
+          class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-end gap-3"
+        >
+          <a
+            href="tugas3a.html"
+            class="w-full sm:w-auto px-6 py-2.5 bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 font-semibold rounded-xl text-center border border-slate-700/50 transition duration-200 flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-right-to-bracket text-xs"></i>
+            Login
+          </a>
+          <a
+            href="tugas3b.html"
+            class="w-full sm:w-auto px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-semibold rounded-xl shadow-lg shadow-indigo-600/25 text-center transition duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 flex items-center justify-center gap-2"
+          >
+            <i class="fa-solid fa-user-plus text-xs"></i>
+            Tambah / Register
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <p class="text-center text-slate-500 text-xs font-medium tracking-wide">
+        © Akhtar Raufasha A.G., XII RPL
+      </p>
+    </div>
+  </body>
+</html>
